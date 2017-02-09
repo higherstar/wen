@@ -14,9 +14,7 @@ module.exports.subscriptionServer = new SubscriptionServer(
   {
     onConnect: async (connectionParams, websocket) => {
       const cookies = cookie.parse(websocket.upgradeReq.headers.cookie);
-
       const user = jwtService.verifyTokenAndReturnUserData(cookies[config.cookie.auth]);
-
       return user;
     },
     subscriptionManager
