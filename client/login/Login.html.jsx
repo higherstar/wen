@@ -2,11 +2,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-
-
 export default function Html({ root, assets }) {
   const isProduction = process.env.NODE_ENV === 'production';
-
   return (
     <html lang="en">
       <head>
