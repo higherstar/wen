@@ -1,7 +1,5 @@
 const waitOn = require('wait-on');
 const ora = require('ora');
-
-
 const opts = {
   resources: [
     'http-get://static:3000'
