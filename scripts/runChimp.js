@@ -2,8 +2,6 @@ const waitOn = require('wait-on');
 const spawn = require('child_process').spawn;
 const config = require('../common/config.js');
 const ora = require('ora');
-
-
 const args = process.argv.slice(2);
 const isWatch = args.findIndex(a => a === '--watch') !== -1;
 
